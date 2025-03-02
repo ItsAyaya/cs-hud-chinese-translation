@@ -1,3 +1,3 @@
-# Installing and Setup
+# 安装及配置过程
 
-*Please see the `Getting Started` section in the readme.*
+*请查阅readme中的 `开始操作` 部分*

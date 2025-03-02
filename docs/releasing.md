@@ -1,32 +1,32 @@
-# Release Checklist
+# release检查清单
+注：因习惯故不将Github术语翻译
+**注意！** 这只与本项目的维护者有关。
+你基本可以忽略它
 
-**NB!** This is only relevant to maintainers of this project.
-You can most likely ignore it.
+本文档概述了如何发布 HUD 的新版本。 
+将 `0.0.0` 替换为版本号，将 `1970-01-01` 替换为发布的UTC日期。
 
-This document is an overview of how to release a new version of this HUD.  
-Replace `0.0.0` with the release's version number, and `1970-01-01` with the UTC date of the release.
-
-1. Commit/merge all changes that should be part of the release to the `master` branch.
-2. Create a new commit on `master` with the message `release 0.0.0`. As part of this commit:
-	1. Update `src/version.txt` to the new version number.
-	2. In `changelog.md`, move the entries under the `## [Unreleased]` heading to a new heading `## [0.0.0] - 1970-01-01`. Keep the `## [Unreleased]` heading with no items under it, and follow the line spacing (1 empty line between level 3 headings, 2 empty lines between level 2 headings).
-3. After committing the above changes, run `build/build.sh`. Avoid interacting with the files in `build/tmp`.
-4. Push these changes to GitHub.
-5. [Create a new release](https://github.com/drweissbrot/cs-hud/releases/new).
-	1. Choose `v0.0.0` as the tag (select `Create new tag: v0.0.0 on publish`).
-	2. Title it `v0.0.0`.
-	3. Copy the entries for this release from `changelog.md` into the release description.
-	4. Click `Generate release notes`.
-	5. If applicable, check `Set as the latest release` or `Set as a pre-release`.
-	6. Upload all files from `build/tmp/bin`, including `gamestate_integration_drweissbrot_hud.cfg`.
-6. Publish the release.
+1. commit/merge 所有应成为release一部分的更改到 "master "分支。
+2. 在 `master` 上创建一个新commit，信息为 `release 0.0.0`。作为此commit的一部分：
+	1. 将 `src/version.txt` 更新为新版本号.
+	2. 在 `changelog.md` 中，将 `## [Unreleased]` 标题下的条目移至新标题 `## [0.0.0] - 1970-01-01`。保留 `## [Unreleased]` 标题，其下不包含任何条目，并遵守行间距（三级标题之间空一行，二级标题之间空两行）。
+3. 提交上述commit后，运行 `build/build.sh`。避免与 `build/tmp` 中的文件交互。
+4. 将这些commit推送（push）到 GitHub。
+5. [创建新release](https://github.com/drweissbrot/cs-hud/releases/new).
+	1. 选择 `v0.0.0` 作为标签（选择 `Create new tag: v0.0.0 on publish`）。
+	2. 将其命名为`v0.0.0`.
+	3. 将release的条目从 `changelog.md` 复制到release说明中。
+	4. 单击 `Generate release notes`.
+	5. 如果适用, 选择 `Set as the latest release` 或者 `Set as a pre-release`.
+	6. 上传`build/tmp/bin`的所有文件, 包括`gamestate_integration_drweissbrot_hud.cfg`.
+6. 发布release.
 
 
-## Version Numbers
-This project does not adhere to Semantic Versioning (because the "override things" approach to theming makes almost every change a potentially breaking change), but still roughly follows the idea.
+## 版本号
+本项目并不遵循语义版本法（因为 "覆盖事物 "的主题化方法使得几乎每一次更改都有可能是破坏性更改），但仍大致遵循了这一理念。
 
-Version numbers are formatted `MAJOR.MINOR.PATCH`.
+版本号的格式为 "MAJOR.MINOR.PATCH"。（主要.次要.补丁）
 
-If a release only contains bug fixes, increment `PATCH` by 1.  
-If a release contains new features, or changes to behavior or default values, increment `MINOR` by 1, and reset `PATCH` to `0`.  
-If a release drastically changes how the software works, increment `MAJOR` by 1, and reset `MINOR` and `PATCH` to `0`.
+如果一个版本只包含错误修复，则将 `PATCH` 递增 1。 
+如果版本包含新功能、行为或默认值的更改，则将 `MINOR` 递增 1，并将 `PATCH` 重置为 `0`。 
+如果某个版本极大地改变了软件的运行方式，则将 `MAJOR`递增 1，并将 `MINOR` 和 `PATCH` 重置为 `0`。

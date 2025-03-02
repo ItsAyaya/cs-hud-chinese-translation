@@ -1,24 +1,24 @@
-# Networking
+# 网络
 
-You can override the default host binding (`127.0.0.1`) and the default port (`31982`).
+你可以覆盖默认host（主机绑定ip地址） (`127.0.0.1`) 与默认端口 (`31982`).
 
-If you change either of these, you need to update the `uri` in `gamestate_integration_drweissbrot_hud.cfg` to match.  
-If you change the host binding, the HUD will accept connections from any device on the network.
-This may not be a good idea, especially if people you don't trust are on the same network.
+如果你更改了其中任何一项，你都需要在`gamestate_integration_drweissbrot_hud.cfg` 中修改`uri` 以匹配
+如果更改了host binding HUD将接受来自网络上任何设备的连接
+这不太安全，尤其是你的网络中有你不信任的人（干扰或破坏）
 
-To bind to all hosts, set the host to `0.0.0.0`.
+要绑定到所有主机，请将host改为 `0.0.0.0`.
 
 
-## Environment Variables
-You can set the environment variables `HOST` and `PORT`, for example:
+## 环境变量
+你可以设置环境变量 `HOST` and `PORT`, 例如:
 ```sh
 HOST=0.0.0.0 PORT=3000 ./cs-hud-linux
 ```
 
 
 ## theme.json
-You can set a `host` and `port` key in a `theme.json`, either in your `userspace` directory, or in a theme directory.
-For example:
+你可以在`theme.json`中修改`host`与`port`值 , 可以在`userspace` 目录下, 也可以在主题（theme）目录下.
+例如:
 ```json
 {
 	"parent": "fennec",

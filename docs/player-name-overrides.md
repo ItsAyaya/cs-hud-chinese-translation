@@ -1,20 +1,21 @@
-# Player Name Overrides
+# 玩家名称覆盖
 
-You can force the HUD to use a manually specified name for a player.
-This may be useful if a player's name is too long or uses unwanted characters.
-Note that this override will not apply to the kill feed, which will still show the user's original in-game name.
+您可以强制 HUD 使用手动指定的玩家名称。
+如果玩家的名字太长或使用了不需要的字符，这可能会很有用。
+需要注意的是，覆盖名称不适用于击杀信息，击杀信息仍会显示用户在游戏中的原始名称。
 
-To use player name overrides, use the `teams.playerNameOverrides` option on the HUD config page at http://127.0.0.1:31982/config.  
-Provide a player's SteamID64, followed by a space, and the name you want to use for the player.
-You can specify as many players as you want, separated by line breaks.
+要是用玩家姓名覆盖，请在http://127.0.0.1:31982/config的HUD配置界面上使用`teams.playerNameOverrides` 选项
+提供玩家的 SteamID64，后面跟一个空格，以及您想为玩家使用的名字。
+您可以指定任意多个玩家，并用换行符分隔。
 
-For example:
+例如:
 ```
+76561198821646831 是阿文ayaya
 76561198067382161 Dr. Weissbrot
 76561197961491680 tabseN
 ```
 
-You can find SteamID64s by appending `?xml=1` to a user's Steam profile URL (e.g. `https://steamcommunity.com/id/drweissbrot?xml=1`, it's at the very top between the `<steamID64>` tags), or using [SteamDB's Calculator](https://steamdb.info/calculator) (it's the value labeled `SteamID`, usually starting with `7656`).
+您可以通过在用户的 Steam 配置文件 URL 中附加 `?xml=1` 来查找 SteamID64s （例如 `https://steamcommunity.com/id/ItsAyaya?xml=1`，它位于最顶部的 `<steamID64>` 标记之间），或者使用 [SteamDB 计算器](https://steamdb.info/calculator) （它是标有 `SteamID` 的值，通常以 `7656` 开头）。
 
-The first match will be used, i.e. if you have the same player listed twice, the second name will be ignored.
-If you want to temporarily override a player's name, it's a good idea to add that override to the very beginning.
+默认将使用第一个匹配项，也就是说，如果同一个玩家被列出两次，第二个名字将被忽略。
+如果你想临时覆盖某个玩家的名字，最好把覆盖名称添加到最开始的地方。

@@ -1,38 +1,37 @@
-# Overlay Images
+# 覆盖（Overlay）图像（在HUD上显示图片）
 
-You can provide images to overlay on some spots of the HUD, for example to promote sponsors or show your event's logo.
-To use overlay images, first find your `userspace` folder.
-If you're using a pre-packaged executable for running the HUD, it'll be inside the `cs-hud` directory in the same folder as the `cs-hud-win.exe`/`cs-hud-linux`.
-<!-- TODO other ways of running -->
-Alternatively, you can add overlay images to a theme instead.
+你可以提供图像覆盖在 HUD 的某些位置，例如用于宣传赞助商或显示你的活动徽标。
+要使用叠加图像，首先请打开 `userspace` 文件夹.
+如果你使用的是预打包的可执行文件(exe文件)运行HUD，那么他将位于`cs-hud` 目录，与 `cs-hud-win.exe`或`cs-hud-linux`在同一文件夹内
+<!-- 其他的运行方式 -->
+或者，你也可以将覆盖图像添加到主题中
 
-Create an `overlay-images` directory in your `userspace` or theme folder, and save your overlay images in this directory.
-Name each overlay file with the filename mentioned below, followed by the file extension, e.g. `focused-player-bottom.webp`.
-WebP, PNG, and GIF are supported.
-Note that animations (for transitions between multiple sponsors, for instance) are possible using all three of these formats.
+创建一个`overlay-images` 文件夹 在你的`userspace` 或主题文件夹, 并将图像保存在文件夹中
+用下方提到的文件名格式来命名每个图像文件，后面跟上文件扩展名 `focused-player-bottom.webp`.
+WebP, PNG, 和 GIF 都支持.
+请注意，这三种格式都可以制作动画 (例如多个赞助商之间的转换) 
 
-All overlays will use the entire width they have available, and their height will scale accordingly.
-Add some transparent space if you don't want them to take up the entire width.
+所有的覆盖图都将使用该图像的全部宽度，高度也将相应缩放
+如果不想让图像占用整个宽度，可以添加一些透明空间
 
-These overlay spots are available:
-
-
-### Focused Player Bottom
-Filename: `focused-player-bottom`  
-Default width at 1920x1080px viewport size: 467px
-
-This overlay will be placed at the bottom center, just below the focused player.
-It will not be visible during freezetimes.
-
-In the default theme `fennec`, the solid-colored angled bars on the left and right sides of the focused player are at 20 degree angles.
+以下的覆盖点位可用：
 
 
-### Sidebar Left and Right
-Filename: `sidebar-left` or `sidebar-right`  
-Default width at 1920x1080px viewport size: 397px
+### 当前玩家的底部
+文件名: `focused-player-bottom`  
+默认在 1920x1080px分辨率下的宽度为 467px
 
-These overlays will be placed on top of the left or right sidebar, above the grenades and team equipment panels.
-They will be pushed upwards by the team equipment panels during freezetimes.
+此覆盖图将放置于底部中央，也就是当前玩家视角的下方
+在冻结时间时将不可见
 
-The left sidebar overlay is usually not recommended because of spacing issues during freezetime:
-In one-map series, there will be about 120px of height available on 1920x1080px viewports, in series with more maps less than 20px will be available.
+在默认主题 `fennec`中, 当前玩家左右两侧的纯色斜角度数为20度
+
+
+### 左侧边栏与右侧边栏
+文件名: `sidebar-left` 或 `sidebar-right`  
+默认在 1920x1080px分辨率下的宽度为 397px
+
+这些覆盖图将放置在左侧边栏或者右侧边栏的顶部，手榴弹和团队装备面板的上方
+
+一般不建议使用左侧边栏覆盖图，在冻结时间内可能会出现间距问题
+在单地图系列（one-map series）, 1920x1080px 中会有大约 120px 的可用高度，而在有更多地图的系列中，可用高度将少于 20px。

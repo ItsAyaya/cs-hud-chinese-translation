@@ -1,12 +1,12 @@
-# Hiding Players
+# 隐藏玩家
 
-You can hide specific players if you don't want them to show up at all in the HUD.
-This may be useful for coaches that are misrepresented as dead players.  
-Please note that if you hide a real player, you will run into issues.
+你可以HUD中隐藏那些你不想要显示的玩家
+这对于那些被误认为死亡玩家的教练来说可能会有用
+请注意，如果你隐藏了一位真实的玩家，你可能会遇到问题
 
-To hide a player, use the `teams.hiddenPlayers` option on the HUD config page at http://127.0.0.1:31982/config.
-Provide either a player's SteamID64, or a player's name.
-Provide one player per line.
+要隐藏玩家，请在HUD（http://127.0.0.1:31982/config）中使用 `teams.hiddenPlayers` 选项 
+输入玩家的SteamID64代码或玩家名称
+每行输入一位玩家
 
-If you use a player's name, you'll need to exactly match the name that would otherwise be displayed by the HUD.
-If you've changed their name using [Player Name Overrides](https://github.com/drweissbrot/cs-hud/blob/master/docs/player-name-overrides.md), use the name that you used for the override.
+如果你输入的是玩家名称，则需要与游戏中HUD显示的名称完全一致
+如果你使用 [玩家名称覆盖](https://github.com/drweissbrot/cs-hud/blob/master/docs/player-name-overrides.md), 更改了玩家名称，请使用覆盖时使用的名称

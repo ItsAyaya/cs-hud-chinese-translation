@@ -1,44 +1,44 @@
-# Team Name Overrides
+# 队名覆盖
 
-You can force the HUD to use manually specified team names.
-This may be useful if you don't have control over the `mp_teamname_1` etc. cvars of the game server, and/or if not all players use a clan tag.
+您可以强制 HUD 使用手动指定的队名。
+如果您无法控制游戏服务器的 `mp_teamname_1` 等，游戏服务器的cvars，或者如果并非所有玩家都使用战队标签，这可能会很有用。
+注:CS2中未添加战队标签功能
 
-To use team name overrides, use the `teams.teamNameOverrides` option on the HUD config page at http://127.0.0.1:31982/config.  
-Provide a list of space-separated SteamID64s of the players in a team, followed by the team name.
-You can specify as many teams as you want, and as many players per team as you want (at least one per team), separated by line breaks.
+要使用队名覆盖，请在 http://127.0.0.1:31982/config 的 HUD 配置页面上使用 "teams.teamsNameOverrides "选项。 
+提供一个由空格分隔的战队成员 SteamID64 列表，然后是战队名称。
+您可以指定任意多的战队，以及任意多的每队战队（每队至少一名），并用换行符分隔。
 
-For example:
+例如:
 ```
+76561198821646831 山体玩机社
 76561198067382161 76561198297703701 Breads
 76561198443296177 The Enemy Team
 ```
 
-You can find SteamID64s by appending `?xml=1` to a user's Steam profile URL (e.g. `https://steamcommunity.com/id/drweissbrot?xml=1`, it's at the very top between the `<steamID64>` tags), or using [SteamDB's Calculator](https://steamdb.info/calculator) (it's the value labeled `SteamID`, usually starting with `7656`).
+您可以通过在用户的 Steam 配置文件 URL 中添加 `?xml=1` 来查找 SteamID64s （例如 `https://steamcommunity.com/id/drweissbrot?xml=1`，它位于最顶部的 `<steamID64>` 标记之间），或者使用 [SteamDB 计算器](https://steamdb.info/calculator) （它是标有 `SteamID` 的值，通常以 `7656` 开头）
 
-The first match will be used, i.e. if you have the same player listed as part of two teams, the second team will be ignored.
-If a player is standing on for another team, it's a good idea to add that player and the temporary team's name to the very beginning.
+将使用第一次匹配项，也就是说，如果您有同一名队员被列为两支队伍的一员，那么第二支战队将被忽略。
+如果有队员为其他战队替补，最好在开头加上该队员和临时队伍的名字。
 
+## 步骤
+这不一定是最有效的方法，但如果你不确定，可以试着跟着做：
 
-## Step by Step
-This is not necessarily the most efficient way to do it, but if you're not sure, try following along:
+<!-- 可能提到其他运行方式？ -->
+确保 HUD 正在运行（特别是 `cs-hud-win.exe` 或 `cs-hud-linux`）。
 
-<!-- TODO possibly mention other ways of running? -->
-Make sure the HUD is running (specifically the `cs-hud-win.exe` or `cs-hud-linux`).
+每个团队中至少有一名玩家：
+1. 进入他们的 Steam 个人资料。
+2. 复制其个人资料的链接。在浏览器中，从地址栏复制。在 Steam 客户端，右键单击页面，单击 `复制页面 URL`。
+3. 前往 https://steamdb.info/calculator/,将链接粘贴到其中。
+4. 在打开的页面上，向下滚动一下。在 `SteamID`部分，复制 `SteamID`的值。这是一个以 `7656` 开头的长数字。
+5. 前往http://127.0.0.1:31982/config, 向下滚动至 `Teams`.
+6. 将之前复制的 SteamID（"7656 "数字）粘贴到标有 `teams.teamNameOverrides `的文本框中。在数字后面空一格，然后写上队名，完全按照你希望在 HUD 中显示的样子。
+7. 单击保存 `Save`.
 
-For at least one player in every team:
-1. Go to their Steam profile.
-2. Copy the link to their profile. In browser, copy from the address bar. In Steam client, right-click on the page, click `Copy Page URL`.
-3. Go to https://steamdb.info/calculator/, and paste the link in there.
-4. On the page that opens, scroll down a bit. Under the `SteamID` section, copy the value for `SteamID`. It's the long number starting with `7656`.
-5. Go to http://127.0.0.1:31982/config, and scroll down to `Teams`.
-6. Paste the SteamID you copied before (the `7656` number) in the textbox labeled `teams.teamNameOverrides`. Put a space behind the number, then write the team name, exactly as you want it to be displayed in the HUD.
-7. Press `Save`.
-
-For example, for a match BIG vs. 9INE, you could put in this:
+例如, 在 BIG vs. 9INE的比赛中, 你可以这么写:
 ```
 76561197961491680 BIG
 76561198081687729 9INE
 ```
-
-If you want to be sure, include a line for every player in every team.  
-The team names will only appear if you're spectating a match with a matching player. So for the example above, you'd have to find a demo or GOTV server from a BIG vs. 9INE match.
+如果你想保证玩家的名字在战队内，请为每支战队的每名队员都加上一行
+只有当你观看的比赛中有匹配的队员时，队名才会除夕，因此，对于上面的例子，你必须找到BIG vs. 9INE比赛的demo或者GOTV服务器（直播）
