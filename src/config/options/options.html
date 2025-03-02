@@ -1,22 +1,22 @@
 <div class="buttons">
 	<a href="/licenses" target="_blank">
-		Open Licenses
+		开启许可证信息
 	</a>
 
 	<a href="/hud" target="_blank">
-		Open HUD
+		开启 HUD
 	</a>
 
 	<a href="/radar" target="_blank">
-		Open Radar
+		开启雷达
 	</a>
 
 	<button class="save" @click.prevent="save">
-		Save
+		保存
 	</button>
 
 	<button class="force-hud-refresh" @click.prevent="forceHudRefresh">
-		Force HUD Refresh
+		强制HUD刷新
 	</button>
 </div>
 
@@ -55,13 +55,13 @@
 			>
 
 			<button v-if="option.type === 'color'" class="reset" @click.prevent="resetValue(option.key)">
-				Reset to default
+				重置至默认
 			</button>
 		</div>
 
 		<div class="default-and-label">
 			<p v-if="option.fallback" class="default">
-				Default:
+				默认:
 				<code v-if="option.type === 'boolean'">{{ option.fallback ? 'yes' : 'no' }}</code>
 				<code v-else>{{ option.fallback }}</code>
 			</p>

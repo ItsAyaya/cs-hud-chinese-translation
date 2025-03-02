@@ -3,20 +3,20 @@
 		"preferences.isCsgo": {
 			"type": "boolean",
 			"section": "Preferences",
-			"label": "Set this to true if you're using CS:GO instead of CS2"
+			"label": "如果您在使用CS:GO，请选择此选项"
 		},
 
 		"preferences.minimumGoodKdRatio": {
 			"type": "number",
 			"section": "Preferences",
-			"label": "Lowest K/D ratio that counts as \"good\" and can be highlighted in green",
+			"label": "可被视为 “良好”的最低 K/D 比值，并在HUD中以绿色标出",
 			"fallback": "1.001"
 		},
 
 		"preferences.maximumBadKdRatio": {
 			"type": "number",
 			"section": "Preferences",
-			"label": "Highest K/D ratio that counts as \"bad\" and can be highlighted in red",
+			"label": "可被视为 “坏”的最高 K/D 比值，并在HUD中以红色标出",
 			"fallback": "0.999"
 		},
 
@@ -24,32 +24,32 @@
 			"type": "number",
 			"fallback": 24,
 			"section": "Cvars",
-			"label": "Value of mp_maxrounds, i.e. the maximum number of rounds played in regulation"
+			"label": "mp_maxrounds 的值，即常规比赛的最多回合数"
 		},
 
 		"cvars.mp_overtime_maxrounds": {
 			"type": "number",
 			"fallback": 6,
 			"section": "Cvars",
-			"label": "Value of mp_overtime_maxrounds, i.e. the maximum number of rounds played per overtime"
+			"label": "mp_overtime_maxrounds 的值，即每次加时赛的最多回合数"
 		},
 
 		"teams.teamNameOverrides": {
 			"type": "text",
 			"section": "Teams",
-			"label": "List of SteamID64s and team names for overrides; see https://github.com/drweissbrot/cs-hud/blob/master/docs/team-name-overrides.md"
+			"label": "用于覆盖的 SteamID64 和队名列表; 请参阅 https://github.com/ItsAyaya/cs-hud-chinese-translation/blob/master/docs/team-name-overrides.md"
 		},
 
 		"teams.playerNameOverrides": {
 			"type": "text",
 			"section": "Teams",
-			"label": "List of SteamID64s and their player name for overrides; see https://github.com/drweissbrot/cs-hud/blob/master/docs/player-name-overrides.md"
+			"label": "用于覆盖的 SteamID64 和玩家名称列表; 请参阅 https://github.com/ItsAyaya/cs-hud-chinese-translation/blob/master/docs/player-name-overrides.md"
 		},
 
 		"teams.hiddenPlayers": {
 			"type": "text",
 			"section": "Teams",
-			"label": "List of names or SteamID64s of players that should not be shown in the HUD (e.g. coaches); see https://github.com/drweissbrot/cs-hud/blob/master/docs/hiding-players.md"
+			"label": "不应在 HUD 中显示的玩家名称或 SteamID64 列表（例如教练）。; 请参阅 https://github.com/ItsAyaya/cs-hud-chinese-translation/blob/master/docs/hiding-players.md"
 		}
 	}
 }

@@ -5,339 +5,339 @@
 		"series.name.left": {
 			"type": "string",
 			"section": "Series",
-			"label": "Series Name (left)"
+			"label": "赛事名称 (左侧)"
 		},
 
 		"series.name.center": {
 			"type": "string",
 			"section": "Series",
-			"label": "Series Name (center)"
+			"label": "赛事名称 (中心)"
 		},
 
 		"series.name.right": {
 			"type": "string",
 			"section": "Series",
-			"label": "Series Name (right)"
+			"label": "赛事名称 (右侧)"
 		},
 
 		"series.maps.1.name": {
 			"type": "string",
 			"section": "Series: Map 1",
-			"label": "Map 1 Name (including prefix, e.g. `de_cache`)"
+			"label": "地图1的名称 (包括前缀，如： `de_cache`)"
 		},
 
 		"series.maps.1.pickTeam": {
 			"type": "string",
 			"section": "Series: Map 1",
-			"label": "Team that picked Map 1"
+			"label": "选择地图1的队伍"
 		},
 
 		"series.maps.1.isDecider": {
 			"type": "boolean",
 			"section": "Series: Map 1",
-			"label": "If Map 1 is the Decider (for Best of 1s, set this to false)"
+			"label": "如果地图1是决胜局 (若BO1赛制, 将其设置为false)"
 		},
 
 		"series.maps.1.pickTeamScore": {
 			"type": "number",
 			"section": "Series: Map 1",
-			"label": "Final Score of the team that picked this map"
+			"label": "选择这张地图的团队的最终得分"
 		},
 
 		"series.maps.1.enemyTeamScore": {
 			"type": "number",
 			"section": "Series: Map 1",
-			"label": "Final Score of the team that did not pick this map"
+			"label": "没有选择这张地图的队伍的最终得分"
 		},
 
 		"series.maps.2.name": {
 			"type": "string",
 			"section": "Series: Map 2",
-			"label": "Map 2 Name (including prefix, e.g. `de_cache`)"
+			"label": "地图2的名称 (包括前缀，如： `de_cache`)"
 		},
 
 		"series.maps.2.pickTeam": {
 			"type": "string",
 			"section": "Series: Map 2",
-			"label": "Team that picked Map 2"
+			"label": "选择地图2的队伍"
 		},
 
 		"series.maps.2.isDecider": {
 			"type": "boolean",
 			"section": "Series: Map 2",
-			"label": "If Map 2 is the Decider (for Best of 1s, set this to false)"
+			"label": "如果地图2是决胜局 (若BO1赛制, 将其设置为false))"
 		},
 
 		"series.maps.2.pickTeamScore": {
 			"type": "number",
 			"section": "Series: Map 2",
-			"label": "Final Score of the team that picked this map"
+			"label": "选择这张地图的团队的最终得分"
 		},
 
 		"series.maps.2.enemyTeamScore": {
 			"type": "number",
 			"section": "Series: Map 2",
-			"label": "Final Score of the team that did not pick this map"
+			"label": "没有选择这张地图的队伍的最终得分"
 		},
 
 		"series.maps.3.name": {
 			"type": "string",
 			"section": "Series: Map 3",
-			"label": "Map 3 Name (including prefix, e.g. `de_cache`)"
+			"label": "地图3的名称 (包括前缀，如： `de_cache`)"
 		},
 
 		"series.maps.3.pickTeam": {
 			"type": "string",
 			"section": "Series: Map 3",
-			"label": "Team that picked Map 3"
+			"label": "选择地图3的队伍"
 		},
 
 		"series.maps.3.isDecider": {
 			"type": "boolean",
 			"section": "Series: Map 3",
-			"label": "If Map 3 is the Decider (for Best of 1s, set this to false)"
+			"label": "如果地图3是决胜局 (若BO1赛制, 将其设置为false))"
 		},
 
 		"series.maps.3.pickTeamScore": {
 			"type": "number",
 			"section": "Series: Map 3",
-			"label": "Final Score of the team that picked this map"
+			"label": "选择这张地图的团队的最终得分"
 		},
 
 		"series.maps.3.enemyTeamScore": {
 			"type": "number",
 			"section": "Series: Map 3",
-			"label": "Final Score of the team that did not pick this map"
+			"label": "没有选择这张地图的队伍的最终得分"
 		},
 
 		"series.maps.4.name": {
 			"type": "string",
 			"section": "Series: Map 4",
-			"label": "Map 4 Name (including prefix, e.g. `de_cache`)"
+			"label": "地图4的名称 (包括前缀，如： `de_cache`)"
 		},
 
 		"series.maps.4.pickTeam": {
 			"type": "string",
 			"section": "Series: Map 4",
-			"label": "Team that picked Map 4"
+			"label": "选择地图4的队伍"
 		},
 
 		"series.maps.4.isDecider": {
 			"type": "boolean",
 			"section": "Series: Map 4",
-			"label": "If Map 4 is the Decider (for Best of 1s, set this to false)"
+			"label": "如果地图4是决胜局 (若BO1赛制, 将其设置为false))"
 		},
 
 		"series.maps.4.pickTeamScore": {
 			"type": "number",
 			"section": "Series: Map 4",
-			"label": "Final Score of the team that picked this map"
+			"label": "选择这张地图的团队的最终得分"
 		},
 
 		"series.maps.4.enemyTeamScore": {
 			"type": "number",
 			"section": "Series: Map 4",
-			"label": "Final Score of the team that did not pick this map"
+			"label": "没有选择这张地图的队伍的最终得分"
 		},
 
 		"series.maps.5.name": {
 			"type": "string",
 			"section": "Series: Map 5",
-			"label": "Map 5 Name (including prefix, e.g. `de_cache`)"
+			"label": "地图5的名称 (包括前缀，如： `de_cache`)"
 		},
 
 		"series.maps.5.pickTeam": {
 			"type": "string",
 			"section": "Series: Map 5",
-			"label": "Team that picked Map 5"
+			"label": "选择地图5的队伍"
 		},
 
 		"series.maps.5.isDecider": {
 			"type": "boolean",
 			"section": "Series: Map 5",
-			"label": "If Map 5 is the Decider (for Best of 1s, set this to false)"
+			"label": "如果地图5是决胜局 (若BO1赛制, 将其设置为false))"
 		},
 
 		"series.maps.5.pickTeamScore": {
 			"type": "number",
 			"section": "Series: Map 5",
-			"label": "Final Score of the team that picked this map"
+			"label": "选择这张地图的团队的最终得分"
 		},
 
 		"series.maps.5.enemyTeamScore": {
 			"type": "number",
 			"section": "Series: Map 5",
-			"label": "Final Score of the team that did not pick this map"
+			"label": "没有选择这张地图的队伍的最终得分"
 		},
 
 		"cvars.cash_team_loser_bonus": {
 			"type": "number",
 			"fallback": 1400,
 			"section": "Cvars",
-			"label": "Value of cash_team_loser_bonus, i.e. the initial loss bonus amount"
+			"label": "cash_team_loser_bonus 的值，即初始输掉回合奖金额"
 		},
 
 		"cvars.cash_team_loser_bonus_consecutive_rounds": {
 			"type": "number",
 			"fallback": 500,
 			"section": "Cvars",
-			"label": "Value of cash_team_loser_bonus_consecutive_rounds, i.e. the additional loss bonus amount per consecutive round lost"
+			"label": "cash_team_loser_bonus_consecutive_wrounds的值，即每连续输一局的额外奖金额"
 		},
 
 		"cvars.mp_c4timer": {
 			"type": "number",
 			"fallback": 40,
 			"section": "Cvars",
-			"label": "Value of mp_c4timer, i.e. the number of seconds from when the bomb is planted until it explodes"
+			"label": "mp_c4timer 的值，即从放置炸弹到爆炸的秒数"
 		},
 
 		"cvars.mp_roundtime": {
 			"type": "number",
 			"fallback": 1.92,
 			"section": "Cvars",
-			"label": "Value of mp_roundtime, i.e. the default number of minutes a round can take"
+			"label": "mp_roundtime 的值，即一轮回合的默认分钟数"
 		},
 
 		"cvars.mp_team_timeout_max": {
 			"type": "number",
 			"fallback": 4,
 			"section": "Cvars",
-			"label": "Value of mp_team_timeout_max, i.e. the number of tactical timeouts available per team"
+			"label": "mp_team_timeout_max 的值，即每队可使用的战术暂停次数"
 		},
 
 		"cvars.mp_team_timeout_time": {
 			"type": "number",
 			"fallback": 30,
 			"section": "Cvars",
-			"label": "Value of mp_team_timeout_time, i.e. the duration in seconds of each tactical timeout"
+			"label": "mp_team_timeout_time 的值，即每次战术超时的持续时间（秒）。"
 		},
 
 		"cvars.mp_freezetime": {
 			"type": "number",
 			"fallback": 20,
 			"section": "Cvars",
-			"label": "Value of mp_freezetime, i.e. the duration in seconds of each freezetime"
+			"label": "mp_freezetime 的值，即每次冻结时间的持续时间（秒）。"
 		},
 
 		"preferences.playersAlive.showDuringFreezetime": {
 			"type": "boolean",
 			"section": "Preferences",
-			"label": "Show \"Players Alive\" during freezetime"
+			"label": "在冻结期间显示玩家存活"
 		},
 
 		"preferences.sidebar.teamGrenades.hideDuringRound": {
 			"type": "boolean",
 			"section": "Preferences",
-			"label": "Hode Team Grenades panels in sidebars during the round (if no, will only show during freezetimes, and the first few seconds of the round (defined in preferences.sidebar.teamGrenades.activeIntoRoundSec))"
+			"label": "本轮回合期间在侧边栏中显示团队投掷物面板（如果没有，则仅在冻结时间和本轮回合开始的前几秒显示（在 preferences.sidebar.teamGrenades.activeIntoRoundSec 中定义））。"
 		},
 
 		"preferences.sidebar.teamGrenades.activeIntoRoundSec": {
 			"type": "number",
 			"fallback": 5,
 			"section": "Preferences",
-			"label": "Number of seconds into the round the Team Grenades panel should be visible (0 to disable; ignored when preferences.sidebar.teamGrenades.hideDuringRound is set to no)"
+			"label": "团队投掷物面板在回合开始后的可见秒数（0 表示禁用；preferences.sidebar.teamGrenades.hideDuringRound 设置为否时忽略）。"
 		},
 
 		"preferences.sidebar.teamEquipment.activeIntoRoundSec": {
 			"type": "number",
 			"fallback": 5,
 			"section": "Preferences",
-			"label": "Number of seconds into the round the Team Money and Equipment panel should be visible (0 to disable)"
+			"label": "本轮回合开始后多少秒内应显示“队伍资金和装备”面板（0为禁用）。"
 		},
 
 		"preferences.seriesGraph.showMapForOnlyMatch": {
 			"type": "boolean",
 			"section": "Preferences",
-			"label": "Show map name and screenshot in the Series Graph, even if there is only a single match in the series"
+			"label": "在赛事图表中显示地图名称和截图，即使赛事中只有一场比赛"
 		},
 
 		"preferences.topBar.clock.tenSecondsRedInFreezetime": {
 			"type": "boolean",
 			"section": "Preferences",
-			"label": "Show clock in red at less than 10 seconds in Freezetime"
+			"label": "在冻结时间少于 10 秒时显示红色时钟"
 		},
 
 		"preferences.topBar.clock.tenSecondsRedInTacticalTimeout": {
 			"type": "boolean",
 			"section": "Preferences",
-			"label": "Show clock in red at less than 10 seconds during Tactical Timeouts"
+			"label": "在战术暂停期间，时钟在少于 10 秒时显示为红色"
 		},
 
 		"preferences.topBar.clock.tenSecondsRedInRoundRestartDelay": {
 			"type": "boolean",
 			"section": "Preferences",
-			"label": "Show clock in red at less than 10 seconds after round end"
+			"label": "在回合结束不到 10 秒时显示红色时钟"
 		},
 
 		"preferences.topBar.matchPointRounds.showDuringRound": {
 			"type": "boolean",
 			"section": "Preferences",
-			"label": "Show \"First to X Rounds\" panel (visible during Overtime) during round (otherwise only in Freezetime)"
+			"label": "在回合中展示“首先到第X回合（获胜）”面板 (在加时赛中可见)(否则，只在冻结时间中展示)"
 		},
 
 		"preferences.topBar.team.roundWinnerPanel.showIntoFreezetimeSec": {
 			"type": "number",
 			"fallback": 0,
 			"section": "Preferences",
-			"label": "Number of seconds into the following round's freezetime the \"Wins the Round\" panel should be visible (0 to disable; 1000 to show during entire freezetime)"
+			"label": " “赢得回合” 面板在下一轮冻结时间开始后的可见秒数(0 表示禁用,1000 表示在整个冻结时间内显示)"
 		},
 
 		"preferences.focusedPlayer.maximumRedHealthPoints": {
 			"type": "number",
 			"section": "Preferences",
-			"label": "Maximum HP that will be highlighted in red (e.g. 20)"
+			"label": "最高会被涂红的HP数(濒死HP) (例如20)"
 		},
 
 		"css.base-scale-factor": {
 			"type": "text",
 			"section": "Style Overrides",
-			"label": "Base size that everything is sized relative to; e.g. `10px`"
+			"label": "所有内容都相对于的基本尺寸；例如 `10px`"
 		},
 
 		"css.counter-terrorists-fill-rgb": {
 			"type": "color",
 			"section": "Style Overrides",
-			"label": "CT fill color (used for most CT-colored surfaces)"
+			"label": "CT方的填充颜色（用于大多数CT方的着色界面）"
 		},
 
 		"css.counter-terrorists-border-rgb": {
 			"type": "color",
 			"section": "Style Overrides",
-			"label": "CT border color (used for small or thing CT-colored surfaces)"
+			"label": "CT方的边框颜色（用于小的或有CT方颜色的界面）"
 		},
 
 		"css.counter-terrorists-text-rgb": {
 			"type": "color",
 			"section": "Style Overrides",
-			"label": "CT text color (used for CT-colored text)"
+			"label": "CT方文字颜色 (用于CT方文本的文本颜色)"
 		},
 
 		"css.terrorists-fill-rgb": {
 			"type": "color",
 			"section": "Style Overrides",
-			"label": "T fill color (used for most T-colored surfaces)"
+			"label": "T方的填充颜色（用于大多数T方的着色界面）"
 		},
 
 		"css.terrorists-border-rgb": {
 			"type": "color",
 			"section": "Style Overrides",
-			"label": "T border color (used for small or thing T-colored surfaces)"
+			"label": "T方的边框颜色（用于小的或有T方颜色的界面）"
 		},
 
 		"css.terrorists-text-rgb": {
 			"type": "color",
 			"section": "Style Overrides",
-			"label": "T text color (used for T-colored text)"
+			"label": "T方文字颜色 (用于T方文本的文本颜色)"
 		},
 
 		"css.primary-font-family": {
 			"type": "string",
 			"section": "Style Overrides",
-			"label": "Font"
+			"label": "字体"
 		}
 	},
 
 	"optionSectionDescriptions": {
-		"Style Overrides": "NB: To apply changes, click Save, then Force HUD Refresh."
+		"Style Overrides": "注意：要应用更改，请单击保存，然后强制刷新 HUD。"
 	}
 }

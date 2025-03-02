@@ -1,47 +1,47 @@
 <section>
 	<header>
-		<h2>Updates</h2>
+		<h2>更新</h2>
 	</header>
 
 	<div v-if="isCheckingForInstalledVersion" class="inner">
-		Fetching installed version...
+		获取已安装版本...
 	</div>
 
 	<div v-else-if="! installedVersionString" class="inner">
-		Something went wrong while fetching the installed version.
+		在获取已安装版本时出现错误。
 	</div>
 
 	<div v-else class="inner">
 		<div>
-			Installed version:
+			已安装版本:
 			{{ installedVersionString }}
 			<br>
-			Latest version:
-			{{ latestVersionString || 'unknown, please check for updates' }}
+			最新版本:
+			{{ latestVersionString || '未知，请检查更新。' }}
 		</div>
 
 		<button @click.prevent="checkForUpdates()" :disabled="isCheckingForUpdates" class="check-for-updates">
-			Check for updates
+			检查更新
 		</button>
 
 		<div v-if="isCheckingForUpdates">
-			Checking for updates...
+			正在检查更新...
 		</div>
 
 		<template v-else-if="latestVersionString">
 			<div v-if="isInstalledVersionOutdated && latestVersionReleaseUrl">
-				Your installed version is out of date.
-				<a :href="latestVersionReleaseUrl" target="_blank">Please update to the latest version.</a>
+				您安装的版本已过时.
+				<a :href="latestVersionReleaseUrl" target="_blank">请更新到最新版本。</a>
 			</div>
 
 			<div v-else>
-				You're up to date.
+				版本已最新。
 			</div>
 		</template>
 
 		<div v-else-if="errorOccuredWhileCheckingForUpdates">
-			Something went wrong while checking for updates.
-			Please try again.
+			检查更新时出错。
+			请重试。
 		</div>
 	</div>
 </section>
