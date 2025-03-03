@@ -32,8 +32,6 @@ docker build -t drweissbrot/cs-hud-build .
 
 # build the main executable
 docker run \
-	--rm \
-	-u node \
 	-v ./tmp/bin:/home/node/bin \
 	-v ./tmp/clone:/home/node/app \
 	-w /home/node/app \
