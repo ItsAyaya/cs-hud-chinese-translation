@@ -48,7 +48,7 @@ ItsAyaya翻译，基于最新版（1.6.1）翻译
 所有内容理应可以在 CS:GO 和 CS2运行. 如果你遇到什么问题, [请在原作者那边提出issue（如果是汉化问题请在我的项目中提出issue)。](https://github.com/drweissbrot/cs-hud/issues)  
 
 ### 我可以用于我的活动吗?
-可！ 
+可!  
 不需要署名， 但如果可以的话, 请在某处标注一下原作者的[Github链接](https://github.com/drweissbrot/cs-hud).  
 
 ### 我为什么要用这个?
