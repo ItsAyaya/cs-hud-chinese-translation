@@ -33,7 +33,7 @@ ItsAyaya翻译，基于最新版（1.6.1）翻译
 ### 全屏窗口（目前有问题，请等待release更新）
 另外，您也可以使用单独的可执行文件在 CS 上覆盖 HUD。  
 
-1. M确保已按照上述说明进行操作。您应该会看到一个控制台窗口，显示 `CS HUD 已激活`.
+1. 确保已按照上述说明进行操作。您应该会看到一个控制台窗口，显示 `CS HUD 已激活`.
 2. 在windows上下载 [`cs-hud-overlay-win32-x64.zip`](https://github.com/drweissbrot/cs-hud/releases/latest/download/cs-hud-overlay-win32-x64.zip) , 或在linux上下载 [`cs-hud-overlay-linux-x64.tar.gz`](https://github.com/drweissbrot/cs-hud/releases/latest/download/cs-hud-overlay-linux-x64.tar.gz) . 解压所有文件
 3. 启动 `cs-hud-overlay.exe` 或者 `cs-hud-overlay` 
 4. 启动CS, 打开设置, `视频`, 然后将 `显示模式` 改为 `窗口化全屏`.
@@ -57,7 +57,8 @@ ItsAyaya翻译，基于最新版（1.6.1）翻译
 在早期的CS2中，连名字也无法出现！  
 自定义HUD（例如这个）是为了视频服务的，它们向你展示一切，而且在大屏幕上更可读，并且比游戏内部好看点（起码）。  
 为什么你会，就，用到这个HUD呢？它使用方便，方便扩展与自定义你的需求，而且免费。  
-（请注意，这个项目只是个用爱发电的项目，如果你是个需要支持SLA的大型TO,你可能需要去别处转转:D）(译者注：我也不知道这是啥，可能如果你是个大型赛事举办者，需要更广泛的支持，你需要去找那些更专业的HUD项目)  
+（请注意，这个项目只是个用爱发电的项目，如果你是个需要支持SLA的大型TO,你可能需要去别处转转 :D）  
+(译者注：我也不知道这是啥，可能如果你是个大型赛事举办者，需要更广泛的支持，你需要去找那些更专业的HUD项目)  
 
 ### 如何更改颜色/字体/X？
 要进行颜色和字体等简单的视觉更改，请打开 http://localhost:31982/config 上的 HUD 配置页面并向下滚动到  `Style Overrides`:  
