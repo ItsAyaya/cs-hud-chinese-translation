@@ -1,11 +1,10 @@
 # cs-hud
 用于《反恐精英 2》（和 CS:GO）比赛直播的免费、可定制的观众 HUD。  
 ItsAyaya翻译，基于最新版（1.6.1）翻译  
-若有翻译问题请在此仓库提出issue！感谢！  
+![](assets/cs2-hud-screenshot-1080.png)
+若有问题请在此仓库提出issue！感谢！  
 请在使用这个项目的时候，在明显的位置展示出原作者的[Github项目链接](https://github.com/drweissbrot/cs-hud)  
 本人不才，我只会翻译其中的文本，若遇到了技术性问题，还请多多指教，我会尽最大努力学习并修改！
-![](assets/cs2-hud-screenshot-1080.png)
-
 ## 开始使用
 最简单的方法是使用预打包的二进制文件，但将来还会有其他选择。
 <!-- TODO write, then link to more in-depth guides for running via yarn, docker -->
